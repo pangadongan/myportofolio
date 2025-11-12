@@ -1,1 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Elfin Pujianto Pangadongan</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+        :root {
+            --primary: #375e97;
+            --secondary: #f7b32b;
+            --background: #f3f5f9;
+            --text: #222;
+            --card: #fff;
+            --shadow: 0 4px 24px rgba(0,0,0,0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            background: var(--background);
+            margin: 0;
+            color: var(--text);
+        }
+
+        header {
+            background: var(--primary);
+            color: var(--card);
+            padding: 2rem 0 1.5rem;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0 0 .5rem 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .profile-section {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--card);
+            font-weight: bold;
+            box-shadow: var(--shadow);
+            flex-shrink: 0;
+            letter-spacing: 1px;
+            user-select: none;
+        }
+
+        .profile-details {
+            flex: 1;
+        }
+
+        .profile-details h2 {
+            margin-top: 0;
+            font-size: 1.7rem;
+            color: var(--primary);
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .profile-details p {
+            margin: .5rem 0;
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #444;
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            flex: 1 1 250px;
+            min-width: 250px;
+            max-width: 100%;
+            overflow: hidden;
+        }
+
+        .card ul {
+            padding-left: 1.3rem;
+            margin: 0;
+        }
+
+        .card ul li {
+            margin-bottom: .8rem;
+        }
+
+        .contact-info {
+            background: var(--primary);
+            color: var(--card);
+            padding: 1.5rem;
+            border-radius: 10px;
+            font-size: 1rem;
+            box-shadow: var(--shadow);
+        }
+
+        .contact-info strong {
+            color: var(--secondary);
+        }
+
+        @media (max-width: 700px) {
+            .profile-section {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+            .cards {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 500px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .section-title {
+                font-size: 1.1rem;
+            }
+            .profile-img {
+                width: 80px;
+                height: 80px;
+                font-size: 2rem;
+            }
+            .container {
+                padding: 0 .5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Elfin Pujianto Pangadongan</h1>
+        <p>Calon lulusan SMK yang antusias, kreatif, dan siap berkarya</p>
+    </header>
+    <main class="container">
+        <section class="profile-section">
+            <div class="profile-img">E</div>
+            <div class="profile-details">
+                <h2>Tentang Saya</h2>
+                <p>
+                    Saya adalah siswa SMK yang bersemangat dalam mempelajari teknologi, khususnya pengembangan web. Saya memiliki motivasi tinggi untuk berkarir di bidang IT, terbuka dengan tantangan baru, dan siap bekerja sama dalam tim. Portofolio ini saya buat untuk memperkenalkan diri saya kepada dunia profesional.
+                </p>
+            </div>
+        </section>
+        <div class="cards">
+            <section class="card">
+                <div class="section-title">Pendidikan</div>
+                <ul>
+                    <li><strong>SMK Negeri XYZ</strong> - Teknik Komputer dan Jaringan<br>
+                        <span style="color:gray;">2022 - 2025</span>
+                    </li>
+                </ul>
+            </section>
+            <section class="card">
+                <div class="section-title">Keahlian</div>
+                <ul>
+                    <li>HTML, CSS, &amp; Dasar JavaScript</li>
+                    <li>Desain web responsif</li>
+                    <li>Mengoperasikan aplikasi Office</li>
+                    <li>Koneksi jaringan dasar</li>
+                    <li>Manajemen waktu dan tim</li>
+                </ul>
+            </section>
+            <section class="card">
+                <div class="section-title">Pengalaman</div>
+                <ul>
+                    <li>
+                        <strong>Praktik Kerja Industri</strong><br>
+                        PT. Teknologi Nusantara – <span style="color:gray;">Jan 2024 - Mar 2024</span><br>
+                        Membantu pembuatan halaman web profil perusahaan dan pengelolaan konten.
+                    </li>
+                    <li>
+                        <strong>Proyek Pribadi</strong><br>
+                        Membuat beberapa website sederhana untuk latihan dan tugas sekolah.
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <section class="contact-info">
+            <div class="section-title" style="color:var(--card);">Kontak Saya</div>
+            <div>
+                Email: <strong>elfinpangadongan@email.com</strong><br>
+                Telepon: <strong>0812-3456-7890</strong><br>
+                Instagram: <strong>@elfin_pangadongan</strong><br>
+                LinkedIn: <strong>linkedin.com/in/elfinpangadongan</strong>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
